@@ -89,7 +89,7 @@ python main.py
 ### `courses.csv`
 Defines the list of courses, including the number of weekly slots required and whether a tutorial is required.
 
-```csv
+```markdown
 | CourseCode | CourseName                          | WeeklySlots | RequiresTutorial |
 |------------|-------------------------------------|-------------|------------------|
 | CS5701     | Foundations of Data Engineering     | 3           | Yes              |
