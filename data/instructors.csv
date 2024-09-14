@@ -1,0 +1,11 @@
+InstructorID,Name,MaxTheoryCourses,MaxPracticalCourses,CanTeach
+I001,Dr. Jiji C V,2,1,"CS5701,CS5702,CS5703"
+I002,Dr. Sakthi Balan,3,1,"CS5001,CS5002,CS5702,CS5704"
+I003,Dr. R. Sujatha,2,2,"CS5003,CS5701,CS5004"
+I004,Dr. Priyadarshan Parida,3,1,"CS5703,CS5001,CS5005"
+I005,Dr. S. Satyanarayanan,2,1,"CS5002,CS5702,CS5004"
+I006,Dr. Lakshmi Narayan,3,2,"CS5003,CS5001,CS5005,CS5704"
+I007,Dr. Ananth Krishnan,2,2,"CS5001,CS5701,CS5704"
+I008,Dr. Rajesh Bhat,2,1,"CS5701,CS5703,CS5003"
+I009,Dr. Nithya Raman,2,1,"CS5702,CS5005,CS5004"
+I010,Dr. Swathi Ramesh,3,1,"CS5003,CS5704,CS5002"

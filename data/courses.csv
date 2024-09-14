@@ -1,0 +1,26 @@
+CourseCode,CourseName,WeeklySlots,RequiresTutorial
+CS5701,Foundations of Data Engineering,3,Yes
+CS5702,Explainable AI,3,No
+CS5703,Machine Learning Optimization Techniques,3,Yes
+CS5704,Reinforcement Learning,3,No
+CS5001,Evolutionary Computing,2,No
+CS5002,Data Structures and Algorithms,3,No
+CS5003,Computer Vision,2,Yes
+CS5004,Advanced Databases,3,Yes
+CS5005,Natural Language Processing,2,Yes
+CS5705,Big Data Analytics,3,No
+CS5706,Parallel Computing,2,No
+CS5707,Quantum Computing,2,Yes
+CS5708,Cyber Security,3,No
+CS5006,IoT Fundamentals,2,Yes
+CS5007,Blockchain Technology,2,Yes
+CS5008,Edge Computing,3,No
+CS5009,Neural Networks,3,Yes
+CS5010,Robotics and Automation,2,No
+CS5709,Cloud Computing,3,No
+CS5710,Graph Theory,2,No
+CS5011,Computational Geometry,2,Yes
+CS5012,Data Mining,3,Yes
+CS5013,Pattern Recognition,2,No
+CS5014,Soft Computing,2,Yes
+CS5711,AI for Healthcare,3,No
