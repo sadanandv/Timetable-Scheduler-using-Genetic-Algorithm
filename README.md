@@ -102,7 +102,7 @@ Defines the list of courses, including the number of weekly slots required and w
 ### `instructors.csv`
 Contains details about the instructors, including the courses they can teach and their teaching limits.
 
-```csv
+```markdown
 | InstructorID | Name                  | MaxTheoryCourses | MaxPracticalCourses | CanTeach                        |
 |--------------|-----------------------|------------------|---------------------|---------------------------------|
 | I001         | Dr. abc | 2                | 1                   | CS5701, CS5702, CS5703          |
@@ -116,7 +116,7 @@ Contains details about the instructors, including the courses they can teach and
 ### `sections.csv`
 Defines the student groups, their batch year, and the subjects they are enrolled in.
 
-```csv
+```markdown
 | SectionID | BatchYear | Discipline | Subjects                          |
 |-----------|-----------|------------|-----------------------------------|
 | S1_CS_A   | 1         | CS         | CS5701, CS5001, CS5003            |
@@ -129,7 +129,7 @@ Defines the student groups, their batch year, and the subjects they are enrolled
 ###`time_slots.csv`
 Lists the available time slots, specifying the days, times, and the batch year that each slot is available for.
 
-```csv
+```markdown
 | TimeSlotID | Day       | StartTime | EndTime   | IsBreak | BatchYear |
 |------------|-----------|-----------|-----------|---------|-----------|
 | 1          | Monday    | 08:10     | 09:00     | No      | 1         |
