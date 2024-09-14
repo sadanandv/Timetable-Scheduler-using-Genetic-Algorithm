@@ -90,12 +90,14 @@ python main.py
 Defines the list of courses, including the number of weekly slots required and whether a tutorial is required.
 
 ```csv
-CourseCode,CourseName,WeeklySlots,RequiresTutorial
-CS5701,Foundations of Data Engineering,3,Yes
-CS5702,Explainable AI,3,No
-CS5703,Machine Learning Optimization Techniques,2,Yes
-CS5001,Data Structures and Algorithms,4,Yes
-CS5002,Advanced Databases,3,No
+| CourseCode | CourseName                          | WeeklySlots | RequiresTutorial |
+|------------|-------------------------------------|-------------|------------------|
+| CS5701     | Foundations of Data Engineering     | 3           | Yes              |
+| CS5702     | Explainable AI                      | 3           | No               |
+| CS5703     | Machine Learning Optimization Techniques | 2       | Yes              |
+| CS5001     | Data Structures and Algorithms      | 4           | Yes              |
+| CS5002     | Advanced Databases                  | 3           | No               |
+
 ```
 ### `instructors.csv`
 Contains details about the instructors, including the courses they can teach and their teaching limits.
