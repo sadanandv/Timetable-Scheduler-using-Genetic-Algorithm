@@ -103,39 +103,45 @@ Defines the list of courses, including the number of weekly slots required and w
 Contains details about the instructors, including the courses they can teach and their teaching limits.
 
 ```csv
-InstructorID,Name,MaxTheoryCourses,MaxPracticalCourses,CanTeach
-I001,Dr. Jiji C V,2,1,"CS5701,CS5702,CS5703"
-I002,Dr. Sakthi Balan,2,1,"CS5001,CS5002,CS5702,CS5704"
-I003,Dr. R. Sujatha,2,2,"CS5003,CS5701,CS5004"
-I004,Dr. Priyadarshan Parida,3,1,"CS5703,CS5001,CS5005"
-I005,Dr. S. Satyanarayanan,2,1,"CS5002,CS5702,CS5004"
+| InstructorID | Name                  | MaxTheoryCourses | MaxPracticalCourses | CanTeach                        |
+|--------------|-----------------------|------------------|---------------------|---------------------------------|
+| I001         | Dr. abc | 2                | 1                   | CS5701, CS5702, CS5703          |
+| I002         | Dr. bcd | 2                | 1                   | CS5001, CS5002, CS5702, CS5704  |
+| I003         | Dr. efc | 2                | 2                   | CS5003, CS5701, CS5004          |
+| I004         | Dr. xyz | 3                | 1                   | CS5703, CS5001, CS5005          |
+| I005         | Dr. aabbcc | 2                | 1                   | CS5002, CS5702, CS5004          |
+
 ```
 
 ### `sections.csv`
 Defines the student groups, their batch year, and the subjects they are enrolled in.
 
 ```csv
-SectionID,BatchYear,Discipline,Subjects
-S1_CS_A,1,CS,"CS5701,CS5001,CS5003"
-S1_CS_B,1,CS,"CS5701,CS5002,CS5004"
-S2_CS_A,2,CS,"CS5704,CS5001,CS5003"
-S2_CS_B,2,CS,"CS5703,CS5002,CS5005"
+| SectionID | BatchYear | Discipline | Subjects                          |
+|-----------|-----------|------------|-----------------------------------|
+| S1_CS_A   | 1         | CS         | CS5701, CS5001, CS5003            |
+| S1_CS_B   | 1         | CS         | CS5701, CS5002, CS5004            |
+| S2_CS_A   | 2         | CS         | CS5704, CS5001, CS5003            |
+| S2_CS_B   | 2         | CS         | CS5703, CS5002, CS5005            |
+
 ```
 
 ###`time_slots.csv`
 Lists the available time slots, specifying the days, times, and the batch year that each slot is available for.
 
 ```csv
-TimeSlotID,Day,StartTime,EndTime,IsBreak,BatchYear
-1,Monday,08:10,09:00,No,1
-2,Monday,09:00,09:50,No,1
-3,Monday,10:10,11:00,No,1
-4,Tuesday,08:10,09:00,No,2
-5,Tuesday,09:00,09:50,No,2
-6,Wednesday,08:10,09:00,No,3
-7,Wednesday,09:00,09:50,No,3
-8,Thursday,08:10,09:00,No,4
-9,Thursday,09:00,09:50,No,4
+| TimeSlotID | Day       | StartTime | EndTime   | IsBreak | BatchYear |
+|------------|-----------|-----------|-----------|---------|-----------|
+| 1          | Monday    | 08:10     | 09:00     | No      | 1         |
+| 2          | Monday    | 09:00     | 09:50     | No      | 1         |
+| 3          | Monday    | 10:10     | 11:00     | No      | 1         |
+| 4          | Tuesday   | 08:10     | 09:00     | No      | 2         |
+| 5          | Tuesday   | 09:00     | 09:50     | No      | 2         |
+| 6          | Wednesday | 08:10     | 09:00     | No      | 3         |
+| 7          | Wednesday | 09:00     | 09:50     | No      | 3         |
+| 8          | Thursday  | 08:10     | 09:00     | No      | 4         |
+| 9          | Thursday  | 09:00     | 09:50     | No      | 4         |
+
 ```
 
 ## Output Files
