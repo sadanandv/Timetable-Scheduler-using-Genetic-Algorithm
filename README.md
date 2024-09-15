@@ -154,8 +154,60 @@ Lists the available time slots, specifying the days, times, and the batch year t
 - Each instructor has their own sheet, showing the courses they teach, the student groups, and the assigned time slots.
 
 ## Version History
-- _v01_: Initial implementation of the timetable generator using genetic algorithms.
-- _v02_: Added separate instructor schedule output and year-specific time slots for batch scheduling.
+
+### - _v01: Initial Version_
+- Timetable Generation: Basic pipeline implemented to generate timetables for classes based on course, instructor, and time slot availability.
+- CSV Inputs: Incorporated inputs from courses.csv, instructors.csv, time_slots.csv, and sections.csv.
+- Simple Constraints:
+  - Courses were assigned to sections according to required weekly slots.
+  - Time slots were assigned to avoid clashes between instructors and student groups.
+- Output:
+  - Timetable was output to timetable.xlsx.
+  - One sheet for each student group, listing the classes for each day and time.
+
+### _v02: Multiple Time Slots for Different Years_
+- New Feature: Introduced BatchYear in time_slots.csv to handle different time slots for different years.
+  - Each student group now gets assigned time slots specific to their batch year.
+- Instructor Schedule: Added instructor_schedule.xlsx to output individual schedules for instructors with separate sheets for each instructor.
+- CSV Parsing: Modified CSV parsing logic to handle BatchYear and allow filtered time slot selection for the corresponding batch.
+- Constraints: Enhanced logic to assign required slots for each course across the week for different classes, adhering to batch-specific slots.
+
+### _v03: Hyperparameter Tuning and Performance Tracking_
+- Parameter Tuning: Added support for hyperparameter tuning with the following parameters:
+  - Population size
+  - Mutation rate
+  - Crossover rate
+  - Selection method (tournament and roulette wheel)
+  - Elitism rate
+  - Tournament size
+- Convergence Criteria: Implemented convergence threshold, where the algorithm terminates early if no improvement is seen for a set number of generations.
+- Output:
+  - Plots for best and average fitness across generations were saved into the output/ folder.
+  - Generated Excel files (timetable.xlsx and instructor_schedule.xlsx) for the best timetable.
+
+### _v04: Advanced Soft Constraints and Evaluation Metrics_
+- Soft Constraints: Incorporated various instructor and student preferences into the fitness evaluation:
+  - Max teaching hours per day for instructors.
+  - Preference to avoid early/late classes.
+  - Grouping of classes for instructors over consecutive days.
+  - Breaks between teaching sessions.
+  - Specific time preferences for advanced/introductory subjects.
+  - Preferences for lab sessions to be scheduled in continuous slots.
+- GA Evaluation Metrics:
+  - Best Fitness: Quality of the best solution in each generation.
+  - Average Fitness: Tracks the overall population's performance.
+  - Genetic Diversity: Measures the diversity in the population to avoid premature convergence.
+  - Constraint Violations: Counts violations of hard and soft constraints.
+  - Convergence Rate: Tracks the number of generations to convergence.
+  - Runtime and Memory Usage: Monitors the algorithm's efficiency.
+- Plotting:
+  - Plots for fitness, diversity, and violations across generations.
+  - Saved all plots and performance metrics into the output/ folder.
+- Multi-Configuration Testing: Introduced multiple configurations for testing different hyperparameter settings. Results, plots, and metrics are saved in separate folders for each configuration.
+
+### _Upcoming v05: Excel Sheet Formatting Improvements (Planned)_
+- Goal: To improve the readability and formatting of the generated Excel sheets (timetable.xlsx and instructor_schedule.xlsx).
+- Details: Specific formatting details will be shared to enhance usability.
 
 ## Contribution
 Feel free to contribute by opening issues or submitting pull requests for improvements or new features.
